@@ -1,0 +1,4 @@
+C:\Users\Administrator\Desktop\处方结算系统\MenuPage\obj\x64\Debug\MenuPage.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\处方结算系统\MenuPage\obj\x64\Debug\Page0.g.cs
+C:\Users\Administrator\Desktop\处方结算系统\MenuPage\obj\x64\Debug\MenuPage_MarkupCompile.cache
+C:\Users\Administrator\Desktop\处方结算系统\MenuPage\obj\x64\Debug\MenuPage_MarkupCompile.lref

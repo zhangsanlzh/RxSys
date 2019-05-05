@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RECORDS>
+  <RECORD>
+    <NAME>张三</NAME>
+    <SEX>男</SEX>
+    <AGE>20</AGE>
+    <DIAGNOSIS_DESC>脾胃失调</DIAGNOSIS_DESC>
+    <USAGE />
+    <COUNT>0</COUNT>
+    <COSTS>0</COSTS>
+    <DOCTOR_NAME>李四</DOCTOR_NAME>
+    <DATETIME>2019-5-5</DATETIME>
+    <PRECISE_TIME>2019-5-5 20:02</PRECISE_TIME>
+  </RECORD>
+  <RECORD>
+    <NAME>张三</NAME>
+    <SEX>男</SEX>
+    <AGE>20</AGE>
+    <DIAGNOSIS_DESC>脾胃失调</DIAGNOSIS_DESC>
+    <USAGE>
+      <ITEM>
+        <HERBNAME>当归</HERBNAME>
+        <HERBGRAM>20</HERBGRAM>
+      </ITEM>
+      <ITEM>
+        <HERBNAME>当归</HERBNAME>
+        <HERBGRAM>15</HERBGRAM>
+      </ITEM>
+      <ITEM>
+        <HERBNAME>白术</HERBNAME>
+        <HERBGRAM>10</HERBGRAM>
+      </ITEM>
+    </USAGE>
+    <COUNT>3</COUNT>
+    <COSTS>105</COSTS>
+    <DOCTOR_NAME>李四</DOCTOR_NAME>
+    <DATETIME>2019-5-5</DATETIME>
+    <PRECISE_TIME>2019-5-5 20:03</PRECISE_TIME>
+  </RECORD>
+</RECORDS>

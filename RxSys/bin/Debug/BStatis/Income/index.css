@@ -1,0 +1,79 @@
+﻿.row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.clearfix, .row {
+    zoom: 1;
+}
+
+#nav-menu {
+    margin: 25px 0 0;
+    padding: 0;
+}
+
+.col-mb-12 {
+    width: 100%;
+}
+
+.container, .row [class*='col-'] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row [class*='col-'] {
+    float: left;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* @media all and (min-width:768px) */
+.container {
+    max-width: 728px;
+}
+/* @media all and (min-width:992px) */
+.container {
+    max-width: 952px;
+}
+/* @media all and (min-width:1200px) */
+.container {
+    max-width: 1160px;
+}
+/* @media all and (min-width:1200px) */
+.container {
+    max-width: 952px;
+}
+
+#header {
+    padding-top: 35px;
+    border-bottom: 1px solid #EEE;
+}
+
+a {
+    color: #3354aa;
+    text-decoration: none;
+}
+
+#nav-menu a {
+    display: block;
+    margin-right: -1px;
+    padding: 0 20px;
+    border: 1px solid #EEE;
+    border-bottom: none;
+    height: 32px;
+    line-height: 32px;
+    color: #444;
+    float: left;
+}
+
+#nav-menu a:hover, #nav-menu .current {
+    background: #F6F6F6;
+}

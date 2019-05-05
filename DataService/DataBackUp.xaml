@@ -1,0 +1,100 @@
+﻿<Page x:Class="DataService.DataBackUp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DataService"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="800"
+      Title="DataBackUp">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Style="{DynamicResource stackPnlStyle}" x:Name="wrapPnl">
+                <TextBlock Width="80" Text="1" FontFamily="conslas" Foreground="#B8B8B8" FontSize="35" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox Style="{DynamicResource txtBoxStyle}" x:Name="txtBox"
+                        ToolTip="将数据备份到计算机指定的目录，可以是USB或其他挂载到本机的移动设备" />
+                <Button Click="BackUpToLocal_Click" Style="{DynamicResource popManagement}" Width="70" Height="35" Content="选择目录" x:Name="BackUpToLocal"/>
+            </StackPanel>
+            <Border BorderBrush="LightGray" Margin="25 50 0 0" BorderThickness="0.3" Width="500"/>
+        </StackPanel>
+
+        <StackPanel Width="450" Grid.Row="2" Margin="25 0 0 0" Orientation="Horizontal" HorizontalAlignment="Center" Style="{DynamicResource stackPnlStyle}">
+            <TextBlock Width="80" Text="2" FontFamily="conslas" Foreground="#B8B8B8" FontSize="35" TextAlignment="Center" VerticalAlignment="Center"/>
+            <Button Click="BackUpToCloud_Click"  Style="{DynamicResource popManagement}" Width="70" Height="35" Content="备份到云" x:Name="BackUpToCloud"/>
+        </StackPanel>
+
+        <Grid.Resources>
+            <Style x:Key="popManagement" TargetType="Button">
+                <Setter Property="Background" Value="#F5F5F5" />
+                <Setter Property="BorderBrush" Value="#EBEBEC" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="Height" Value="27" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="true">
+                                    <Setter Property="Background" Value="White"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="txtBoxStyle" TargetType="TextBox">
+                <Setter Property="Margin" Value="0 0 0 0"/>
+                <Setter Property="Height" Value="35"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="BorderBrush" Value="#EBEBEC"/>
+                <Setter Property="Foreground" Value="DimGray"/>
+                <Setter Property="Text" Value="备份数据到指定目录"/>
+                <Setter Property="Width" Value="300"/>
+                <Setter Property="IsReadOnly" Value="True"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="TextBox">
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1">
+                                <Border.Background>
+                                    <SolidColorBrush Color="White"/>
+                                </Border.Background>
+                                <ScrollViewer x:Name="PART_ContentHost" 
+                                              VerticalAlignment="Center"
+                                              Margin="12 0 0 0"/>
+
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsFocused" Value="true">
+                                    <Setter Property="BorderBrush" Value="#89D8FF"/>
+                                    <Setter Property="BorderThickness" Value="1"/>
+                                </Trigger>
+                                <Trigger Property="IsMouseOver" Value="true">
+                                    <Setter Property="BorderBrush" Value="#89D8FF"/>
+                                    <Setter Property="BorderThickness" Value="1"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="stackPnlStyle" TargetType="StackPanel">
+                <Setter Property="Margin" Value="22 0 0 5"/>
+                <Setter Property="VerticalAlignment" Value="Top"/>
+                <Setter Property="MinHeight" Value="60"/>
+            </Style>
+        </Grid.Resources>
+    </Grid>
+</Page>

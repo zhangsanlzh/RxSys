@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8" />
+    <link href="RxCount/index.css" type="text/css" rel="styleSheet" />
+</head>
+<body style="height: 100vh; margin: 0">
+    <div style="height:20vh" class="container">
+        <div class="row">
+            <div class="col-mb-12">
+                <nav class="clearfix" id="nav-menu" role="navigation">
+                    <a class="current" href="Income/index.html" target="_self">收入统计</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="RxCountContainer" style="height: 80vh"></div>
+    <script type="text/javascript" src="echarts.min.js"></script>
+    <script type="text/javascript">
+        var dom = document.getElementById("RxCountContainer");
+        var myChart = echarts.init(dom);
+        var app = {};
+        option = null;
+
+        data = [{{$RxCount}}];
+
+        var dateList = data.map(function (item) {
+            return item[0];
+        });
+        var valueList = data.map(function (item) {
+            return item[1];
+        });
+
+        option = {
+            visualMap: [{
+                show: false,
+                type: 'continuous',
+                seriesIndex: 0,
+                min: 0,
+                max: 400
+            }, {
+                show: false,
+                type: 'continuous',
+                seriesIndex: 1,
+                dimension: 0,
+                min: 0,
+                max: dateList.length - 1
+            }],
+            dataZoom: [
+                {   // 这个dataZoom组件，默认控制x轴。
+                    type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
+                    start: 0,
+                    end: 100
+                }
+            ],
+            title: [{
+                left: 'center',
+                text: '处方数量波动情况'
+            }],
+            tooltip: {
+                trigger: 'axis'
+            },
+            xAxis: [{
+                data: dateList
+            }],
+            yAxis: [{
+                splitLine: { show: false }
+            }],
+            grid: [{
+                bottom: '60%'
+            }, {
+                top: '60%'
+            }],
+            series: [{
+                type: 'line',
+                showSymbol: false,
+                data: valueList
+            }]
+        };;
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
+    </script>
+</body>
+</html>

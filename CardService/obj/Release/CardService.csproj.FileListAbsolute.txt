@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\处方结算系统\CardService\bin\Release\CardService.dll
+C:\Users\Administrator\Desktop\处方结算系统\CardService\bin\Release\CardService.pdb
+C:\Users\Administrator\Desktop\处方结算系统\CardService\bin\Release\UsrControl.dll
+C:\Users\Administrator\Desktop\处方结算系统\CardService\bin\Release\UsrControl.pdb
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\CardService.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\AddCardPage.g.cs
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\CardService_MarkupCompile.cache
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\CardService_MarkupCompile.lref
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\AddCardPage.baml
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\CardService.g.resources
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\CardService.Properties.Resources.resources
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\CardService.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\CardService.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\CardService.csproj.CopyComplete
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\CardService.dll
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\Release\CardService.pdb

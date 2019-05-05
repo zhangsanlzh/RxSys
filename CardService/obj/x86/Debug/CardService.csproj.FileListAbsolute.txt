@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\处方结算系统\CardService\bin\x86\Debug\CardService.dll
+C:\Users\Administrator\Desktop\处方结算系统\CardService\bin\x86\Debug\CardService.pdb
+C:\Users\Administrator\Desktop\处方结算系统\CardService\bin\x86\Debug\UsrControl.dll
+C:\Users\Administrator\Desktop\处方结算系统\CardService\bin\x86\Debug\UsrControl.pdb
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\CardService.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\AddCardPage.g.cs
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\CardService_MarkupCompile.cache
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\CardService_MarkupCompile.lref
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\AddCardPage.baml
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\CardService.g.resources
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\CardService.Properties.Resources.resources
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\CardService.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\CardService.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\CardService.csproj.CopyComplete
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\CardService.dll
+C:\Users\Administrator\Desktop\处方结算系统\CardService\obj\x86\Debug\CardService.pdb

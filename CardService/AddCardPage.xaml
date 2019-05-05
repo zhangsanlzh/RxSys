@@ -1,0 +1,117 @@
+﻿<Page x:Class="CardService.AddCardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CardService"
+      xmlns:usrCtrl="clr-namespace:UsrControl;assembly=UsrControl"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="800"
+      Title="AddCardPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Width="400" Height="250" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <usrCtrl:Card />
+        </Grid>
+
+        <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.Background>
+                <SolidColorBrush Color="White"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="1" Click="menuPop_Click" x:Name="btnPop" Style="{DynamicResource btnManagement}">
+                <Button.Content>
+                    <Viewbox Width="13">
+                        <Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="Document" Width="571.057" Height="497.05" Clip="F1 M 0,0L 571.057,0L 571.057,497.05L 0,497.05L 0,0" UseLayoutRounding="False">
+                            <Canvas x:Name="Layer_1" Width="100.01" Height="50.005" Canvas.Left="0" Canvas.Top="0">
+                                <Rectangle x:Name="Rectangle" Width="571.057" Height="28.0027" Canvas.Left="0" Canvas.Top="230.393" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF000000" Fill="#FF000000"/>
+                                <Path x:Name="Path" Width="44.0501" Height="497.05" Canvas.Left="272.239" Canvas.Top="-6.10352e-005" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF000000" Fill="DimGray" Data="F1 M 312.327,496.55L 315.789,0.776428L 276.201,0.499939L 272.739,496.273L 312.327,496.55 Z "/>
+                            </Canvas>
+                        </Canvas>
+                    </Viewbox>
+                </Button.Content>
+            </Button>
+
+        </Grid>
+
+        <Popup x:Name="Pop" VerticalOffset="-5" HorizontalOffset="-30" PopupAnimation="Scroll" Width="100" PlacementTarget="{Binding ElementName=btnPop}" Placement="Top" AllowsTransparency="True" StaysOpen="False">
+            <Border Background="Transparent" CornerRadius="5" BorderBrush="#F0F0F0" BorderThickness="1">
+                <StackPanel>
+                    <Button Content="保存" x:Name="btnSave" Click="popBtn_Click" Style="{DynamicResource popManagement}" />
+                    <Button Content="重置" x:Name="btnReset" Click="popBtn_Click" Style="{DynamicResource popManagement}" />
+                </StackPanel>
+            </Border>
+        </Popup>
+
+        <Grid.Resources>
+            <!--弹出菜单-->
+            <Style x:Key="popManagement" TargetType="Button">
+                <Setter Property="Background" Value="White" />
+                <Setter Property="Height" Value="27" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="true">
+                                    <Setter Property="Background" Value="#F5F5F5"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!--右下方按钮-->
+            <Style x:Key="btnManagement" TargetType="Button">
+                <Setter Property="Margin" Value="0 0 0 10"/>
+                <Setter Property="Width" Value="40"/>
+                <Setter Property="Height" Value="40"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border CornerRadius="20" Background="{TemplateBinding Background}" BorderThickness="1" BorderBrush="White">
+                                <Border.Effect>
+                                    <DropShadowEffect ShadowDepth="-4" BlurRadius="5" Color="LightGray"/>
+                                </Border.Effect>
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="true">
+                                    <Setter Property="Background" Value="#F5F5F5" />
+                                    <Setter Property="Content">
+                                        <Setter.Value>
+                                            <Viewbox Width="13">
+                                                <Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="Document" Width="451.556" Height="451.993" Clip="F1 M 0,0L 451.556,0L 451.556,451.993L 0,451.993L 0,0" UseLayoutRounding="False">
+                                                    <Canvas x:Name="Layer_1" Width="99.9018" Height="49.9992" Canvas.Left="0" Canvas.Top="0">
+                                                        <Path x:Name="Path" Width="451.556" Height="428.357" Canvas.Left="-3.05176e-005" Canvas.Top="17.0231" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF000000" Fill="#FF000000" Data="F1 M 27.2342,17.5231L 451.056,416.48L 424.322,444.88L 0.499969,45.9235L 27.2342,17.5231 Z "/>
+                                                        <Path x:Name="Path_0" Width="427.889" Height="451.993" Canvas.Left="8.49246" Canvas.Top="-6.10352e-005" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF000000" Fill="#FF000000" Data="F1 M 8.99246,424.792L 407.449,0.499939L 435.881,27.2007L 37.4244,451.493L 8.99246,424.792 Z "/>
+                                                    </Canvas>
+                                                </Canvas>
+                                            </Viewbox>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Grid.Resources>
+    </Grid>
+</Page>

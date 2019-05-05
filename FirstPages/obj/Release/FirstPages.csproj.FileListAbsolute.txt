@@ -1,0 +1,17 @@
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\bin\Release\medicineprice.xml
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\bin\Release\FirstPages.dll
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\bin\Release\FirstPages.pdb
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\bin\Release\UsrControl.dll
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\bin\Release\UsrControl.pdb
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\FirstPages.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\Page0.g.cs
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\FirstPages_MarkupCompile.cache
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\FirstPages_MarkupCompile.lref
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\Page0.baml
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\FirstPages.g.resources
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\FirstPages.Properties.Resources.resources
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\FirstPages.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\FirstPages.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\FirstPages.csproj.CopyComplete
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\FirstPages.dll
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\Release\FirstPages.pdb

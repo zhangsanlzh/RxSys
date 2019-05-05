@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<RECORDS>
+  <RECORD>
+    <name>当归</name>
+    <pinCode>DG</pinCode>
+    <purchasePrice>12</purchasePrice>
+    <salePrice>2</salePrice>
+  </RECORD>
+  <RECORD>
+    <name>白术</name>
+    <pinCode>BS</pinCode>
+    <purchasePrice>2</purchasePrice>
+    <salePrice>3.5</salePrice>
+  </RECORD>
+</RECORDS>

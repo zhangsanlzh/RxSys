@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RECORDS>
+  <RECORD>
+    <NAME>张三</NAME>
+    <SEX>男</SEX>
+    <AGE>20</AGE>
+    <DIAGNOSIS_DESC>脾胃失调</DIAGNOSIS_DESC>
+    <USAGE />
+    <COUNT>0</COUNT>
+    <COSTS>0</COSTS>
+    <DOCTOR_NAME>李四</DOCTOR_NAME>
+    <DATETIME>2019-1-26</DATETIME>
+    <PRECISE_TIME>2019-1-26 17:01</PRECISE_TIME>
+  </RECORD>
+</RECORDS>

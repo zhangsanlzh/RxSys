@@ -1,0 +1,87 @@
+﻿<Page x:Class="MenuPage.Page0"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MenuPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page0">
+
+    <Page.Resources>
+        <Style x:Key="SysButton" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="FucButton" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="微软雅黑"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="Margin" Value="0 0 15 5"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="5" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderBrush" Value="#6CE26C" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Border>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1" x:Name="gridContent">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="485*"/>
+                    <ColumnDefinition Width="313*"/>
+                </Grid.ColumnDefinitions>
+                <WrapPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="174,100,157,0" Width="467" Grid.ColumnSpan="2">
+                    <Button Style="{StaticResource FucButton}" Background="#FFF199" Content="中药开方" Click="FucBtn_Click" x:Name="btn0"/>
+                    <Button Style="{StaticResource FucButton}" Background="#FFBF98" Content="中药处方管理" Click="FucBtn_Click" x:Name="btn2"/>
+                    <Button Style="{StaticResource FucButton}" Background="#C1FF98" Content="中药入库" Click="FucBtn_Click" x:Name="btn1"/>
+                    <Button Style="{StaticResource FucButton}" Background="#CB98FF" Content="营业统计" Click="FucBtn_Click" x:Name="btn3"/>
+                    <!--<Button Style="{StaticResource FucButton}" Background="#9D98FF" Content="办卡" Click="FucBtn_Click" x:Name="btn4"/>
+                    <Button Style="{StaticResource FucButton}" Background="#98C1FF" Content="卡次管理" Click="FucBtn_Click" x:Name="btn5"/>-->
+                    <Button Style="{StaticResource FucButton}" Background="#BCCB43" Content="数据备份" Click="FucBtn_Click" x:Name="btn6"/>
+                    <Button Style="{StaticResource FucButton}" Background="#9DCB46" Content="数据恢复" Click="FucBtn_Click" x:Name="btn7"/>
+                </WrapPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</Page>

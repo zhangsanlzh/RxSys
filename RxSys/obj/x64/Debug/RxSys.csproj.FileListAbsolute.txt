@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\处方结算系统\RxSys\obj\x64\Debug\RxSys.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\处方结算系统\RxSys\obj\x64\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\处方结算系统\RxSys\obj\x64\Debug\App.g.cs
+C:\Users\Administrator\Desktop\处方结算系统\RxSys\obj\x64\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrator\Desktop\处方结算系统\RxSys\obj\x64\Debug\RxSys_MarkupCompile.cache
+C:\Users\Administrator\Desktop\处方结算系统\RxSys\obj\x64\Debug\RxSys_MarkupCompile.lref

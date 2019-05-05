@@ -1,0 +1,17 @@
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\bin\x86\Debug\medicineprice.xml
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\bin\x86\Debug\FirstPages.dll
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\bin\x86\Debug\FirstPages.pdb
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\bin\x86\Debug\UsrControl.dll
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\bin\x86\Debug\UsrControl.pdb
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\FirstPages.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\Page0.g.cs
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\FirstPages_MarkupCompile.cache
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\FirstPages_MarkupCompile.lref
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\Page0.baml
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\FirstPages.g.resources
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\FirstPages.Properties.Resources.resources
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\FirstPages.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\FirstPages.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\FirstPages.csproj.CopyComplete
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\FirstPages.dll
+C:\Users\Administrator\Desktop\处方结算系统\FirstPages\obj\x86\Debug\FirstPages.pdb
